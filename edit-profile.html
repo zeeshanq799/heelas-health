@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edit your Heelas Health Care Services profile information">
+    <title>Edit Profile | Heelas Health Care Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heartbeat brand-icon"></i>
+                <div class="brand-text">
+                    <span class="brand-name">Heelas</span>
+                    <span class="brand-subtitle">Health Care</span>
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center order-lg-3">
+                <div class="dropdown">
+                    <button class="btn btn-login btn-sm dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle"></i> John Doe
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user me-2"></i>My Profile</a></li>
+                        <li><a class="dropdown-item" href="profile.html#appointments"><i class="fas fa-calendar-check me-2"></i>My Appointments</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="index.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insurance.html">Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- EDIT PROFILE SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Page Header -->
+                    <div class="d-flex align-items-center mb-4" data-aos="fade-up">
+                        <a href="profile.html" class="btn btn-outline-secondary me-3">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Profile
+                        </a>
+                        <div>
+                            <h2 class="mb-0">Edit Profile</h2>
+                            <p class="text-muted mb-0">Update your personal information</p>
+                        </div>
+                    </div>
+
+                    <!-- Edit Profile Form -->
+                    <div class="custom-card" data-aos="fade-up" data-aos-delay="100">
+                        <form id="editProfileForm" class="needs-validation" novalidate>
+                            <!-- Profile Picture Section -->
+                            <div class="text-center mb-4">
+                                <div class="profile-avatar mx-auto mb-3">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-camera me-2"></i>Change Profile Picture
+                                </button>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Personal Information -->
+                            <h5 class="text-red mb-3"><i class="fas fa-user me-2"></i>Personal Information</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" value="John" required>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" value="Doe" required>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dateOfBirth" value="1980-05-15">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="form-select" id="gender">
+                                        <option value="">Select Gender</option>
+                                        <option value="male" selected>Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                        <option value="prefer-not">Prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Contact Information -->
+                            <h5 class="text-red mb-3"><i class="fas fa-envelope me-2"></i>Contact Information</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" value="john.doe@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" value="(510) 244-2401" required>
+                                    <div class="invalid-feedback">Please enter your phone number.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="altPhone" class="form-label">Alternative Phone</label>
+                                    <input type="tel" class="form-control" id="altPhone" value="(510) 895-4008">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="emergencyContact" class="form-label">Emergency Contact</label>
+                                    <input type="tel" class="form-control" id="emergencyContact" placeholder="Emergency contact number">
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Address Information -->
+                            <h5 class="text-red mb-3"><i class="fas fa-map-marker-alt me-2"></i>Address Information</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Street Address *</label>
+                                    <input type="text" class="form-control" id="address" value="2777 Alvarado Street, Suite B" required>
+                                    <div class="invalid-feedback">Please enter your address.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="city" class="form-label">City *</label>
+                                    <input type="text" class="form-control" id="city" value="San Leandro" required>
+                                    <div class="invalid-feedback">Please enter your city.</div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="state" class="form-label">State *</label>
+                                    <input type="text" class="form-control" id="state" value="CA" required>
+                                    <div class="invalid-feedback">Required</div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="zip" class="form-label">Zip Code *</label>
+                                    <input type="text" class="form-control" id="zip" value="94577" required>
+                                    <div class="invalid-feedback">Required</div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Medical Information -->
+                            <h5 class="text-red mb-3"><i class="fas fa-notes-medical me-2"></i>Medical Information</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="bloodType" class="form-label">Blood Type</label>
+                                    <select class="form-select" id="bloodType">
+                                        <option value="">Select Blood Type</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+" selected>AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="insurance" class="form-label">Insurance Provider</label>
+                                    <input type="text" class="form-control" id="insurance" value="Blue Cross Blue Shield">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="insuranceId" class="form-label">Insurance ID</label>
+                                    <input type="text" class="form-control" id="insuranceId" value="BCBS123456789">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="primaryDoctor" class="form-label">Primary Care Physician</label>
+                                    <input type="text" class="form-control" id="primaryDoctor" value="Dr. Sarah Johnson">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="allergies" class="form-label">Allergies</label>
+                                    <textarea class="form-control" id="allergies" rows="2" placeholder="List any allergies (medications, food, etc.)">Penicillin</textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="medicalConditions" class="form-label">Medical Conditions</label>
+                                    <textarea class="form-control" id="medicalConditions" rows="3" placeholder="List any chronic conditions or medical history">Hypertension, Type 2 Diabetes</textarea>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <!-- Change Password Section -->
+                            <h5 class="text-red mb-3"><i class="fas fa-lock me-2"></i>Change Password</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <label for="currentPassword" class="form-label">Current Password</label>
+                                    <input type="password" class="form-control" id="currentPassword">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="newPassword" class="form-label">New Password</label>
+                                    <input type="password" class="form-control" id="newPassword">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                                    <input type="password" class="form-control" id="confirmNewPassword">
+                                </div>
+
+                                <div class="col-12">
+                                    <small class="text-muted">Leave password fields blank if you don't want to change your password.</small>
+                                </div>
+                            </div>
+
+                            <!-- Form Actions -->
+                            <div class="d-flex justify-content-end gap-3">
+                                <a href="profile.html" class="btn btn-outline-secondary btn-lg">Cancel</a>
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-save me-2"></i>Save Changes
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-md-6">
+                    <a href="index.html" class="footer-logo-link">
+                        <i class="fas fa-heartbeat footer-logo-icon"></i>
+                        <div class="footer-logo-text">
+                            <span class="footer-brand-name">Heelas</span>
+                            <span class="footer-brand-subtitle">Health Care</span>
+                        </div>
+                    </a>
+                    <p>Providing professional home health care services to the San Leandro community and surrounding areas.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt text-red"></i> 2777 Alvarado Street, Suite B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Leandro, CA 94577</li>
+                        <li><i class="fas fa-phone-alt text-red"></i> <a href="tel:+15102442401">1-510-244-2401</a></li>
+                        <li><i class="fas fa-phone-alt text-red"></i> <a href="tel:+15108954008">1-510-895-4008</a></li>
+                        <li><i class="fas fa-envelope text-red"></i> <a href="mailto:info@heelashealthcare.com">info@heelashealthcare.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Heelas Health Care Services. All Rights Reserved. | <a href="privacy-policy.html" class="text-white">Privacy Policy</a> | <a href="terms-conditions.html" class="text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Form validation and submission
+        document.getElementById('editProfileForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Password validation
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmNewPassword = document.getElementById('confirmNewPassword').value;
+
+            if (newPassword || confirmNewPassword) {
+                if (newPassword !== confirmNewPassword) {
+                    alert('New passwords do not match!');
+                    return;
+                }
+                if (!document.getElementById('currentPassword').value) {
+                    alert('Please enter your current password to change your password.');
+                    return;
+                }
+            }
+
+            if (this.checkValidity()) {
+                // Simulate saving - redirect to profile
+                alert('Profile updated successfully!');
+                window.location.href = 'profile.html';
+            }
+
+            this.classList.add('was-validated');
+        });
+    </script>
+</body>
+</html>

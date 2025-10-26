@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Heelas Health Care Services or schedule an appointment for home health care in San Leandro, CA.">
+    <title>Contact Us | Heelas Health Care Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heartbeat brand-icon"></i>
+                <div class="brand-text">
+                    <span class="brand-name">Heelas</span>
+                    <span class="brand-subtitle">Health Care</span>
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center order-lg-3">
+                <a href="login.html" class="btn btn-login btn-sm d-none d-md-block">
+                    <i class="fas fa-user"></i> Login
+                </a>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insurance.html">Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to answer your questions and schedule your appointment</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="custom-card">
+                        <h3 class="mb-4"><i class="fas fa-envelope text-red me-2"></i>Send Email</h3>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="yourName" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+                                    <div class="invalid-feedback">Please enter your phone number.</div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                    <div class="invalid-feedback">Please enter a subject.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="yourMessage" class="form-label fw-semibold">Your Message</label>
+                                    <textarea class="form-control" id="yourMessage" rows="6" required></textarea>
+                                    <div class="invalid-feedback">Please enter your message.</div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="file" class="form-control" id="fileAttachment">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">SEND</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="custom-card contact-info-card">
+                        <h4 class="mb-4">Contact Information</h4>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-2 fw-bold">Address</h6>
+                                    <p class="mb-0 text-muted">2777 Alvarado Street, Suite B<br>San Leandro, CA 94577</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-2 fw-bold">Phone</h6>
+                                    <p class="mb-0">
+                                        <a href="tel:+15102442401" class="text-red">1-510-244-2401</a><br>
+                                        <a href="tel:+15108954008" class="text-red">1-510-895-4008</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-2 fw-bold">Email</h6>
+                                    <p class="mb-0">
+                                        <a href="mailto:info@heelashealthcare.com" class="text-red">info@heelashealthcare.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item mb-0">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon-circle">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-2 fw-bold">Office Hours</h6>
+                                    <p class="mb-2 text-muted">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday & Sunday: Closed</p>
+                                    <p class="mb-0 text-red fw-semibold">24/7 Emergency Support Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-md-6">
+                    <a href="index.html" class="footer-logo-link">
+                        <i class="fas fa-heartbeat footer-logo-icon"></i>
+                        <div class="footer-logo-text">
+                            <span class="footer-brand-name">Heelas</span>
+                            <span class="footer-brand-subtitle">Health Care</span>
+                        </div>
+                    </a>
+                    <p>Providing professional home health care services to the San Leandro community and surrounding areas.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt text-red"></i> 2777 Alvarado Street, Suite B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Leandro, CA 94577</li>
+                        <li><i class="fas fa-phone-alt text-red"></i> <a href="tel:+15102442401">1-510-244-2401</a></li>
+                        <li><i class="fas fa-phone-alt text-red"></i> <a href="tel:+15108954008">1-510-895-4008</a></li>
+                        <li><i class="fas fa-envelope text-red"></i> <a href="mailto:info@heelashealthcare.com">info@heelashealthcare.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Heelas Health Care Services. All Rights Reserved. | <a href="privacy-policy.html" class="text-white">Privacy Policy</a> | <a href="terms-conditions.html" class="text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
